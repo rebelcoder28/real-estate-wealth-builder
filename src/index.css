@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,27 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
+}
+
+/* Custom styling for the SBA Calculator */
+.sba-slider {
+  @apply h-2 bg-gray-200 rounded-full;
+}
+
+.sba-slider-thumb {
+  @apply w-4 h-4 bg-sba-primary rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sba-primary;
+}
+
+.sba-input-group {
+  @apply flex flex-col space-y-2 mb-6;
+}
+
+.sba-card {
+  @apply bg-white rounded-lg shadow-md p-6 animate-fade-in;
+}
+
+.sba-section-title {
+  @apply text-xl font-semibold mb-4 text-sba-primary;
 }
